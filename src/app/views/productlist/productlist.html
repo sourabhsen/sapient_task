@@ -73,11 +73,11 @@
                 <div class="size col-xs-12 col-sm-3 hidden-xs">
                   <h4 class="no-margin">{{item.p_selected_size.code}}</h4>
                 </div>
-                <div class="qty col-xs-12 col-sm-6 hidden-xs">
-                  <input type="text" ng-model="vm.price[$index]" ng-keyup="vm.updatePrice(vm.first)" class="w-half" value="1" />
+                <div class="qty col-xs-12 col-sm-6 hidden-xs"> [{{$index + 1}}]
+                  <input type="text" ng-model="vm.price[$index]"  ng-keyup="vm.updatePrice($index,vm.price[$index])" class="w-half" value="1" />
                 </div>
                 <div class="price col-xs-12 col-sm-3 hidden-xs">
-                  <h4 class="no-margin text-right">{{item.c_currency}}{{item.p_price}}</h4>
+                  <h4 class="no-margin text-right">{{item.c_currency}}{{item.p_updatedprice}}</h4>
                 </div>
               </div>
             </li>
