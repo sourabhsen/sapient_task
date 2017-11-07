@@ -1,0 +1,32 @@
+<div class="modal-header" >
+            <h3 class="modal-title">Product Detail</h3>
+        </div>
+        <div class="modal-body clearfix">
+            <div class="col-xs-12 col-sm-6">
+                 <h4>{{items.p_variation}}{{items.P_name}}</h4>
+                 <p>
+                     <span>{{items.c_currency}}</span><b>{{items.p_price}}</b>
+                 </p>
+                 </br>
+                 </br>
+                 </br>
+                 <p class="text-center">
+                     {{items.p_selected_color.name}}
+                 </p>
+                 <div class="text-center">
+                     <span ng-repeat="c in items.p_available_options.colors" class="btn" ng-style="{'background':c.hexcode}"></span>
+                   
+                 </div>
+             
+              <select class="form-control"></select>
+              <button class="btn btn-primary">Edit</button>   
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="assets/image/T{{items.p_id}}.jpg" alt=""/>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+ </div>

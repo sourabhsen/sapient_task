@@ -16,6 +16,16 @@
         }
       }
 
+    }).state('checkout', {
+      url: '/checkout',
+      views: {
+        'main': {
+          template: '<a ui-sref="productsInCart">Back</a><h2>Thankyou</h2>'
+        },
+        'header': {
+          templateUrl: 'app/views/header.html'
+        }
+      }
     });
   }]).controller('AppController', [function () {}]);
 })(window, window.angular);

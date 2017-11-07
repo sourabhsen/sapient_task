@@ -122,11 +122,7 @@ a, select {
 .w-half{
   width:50%;
 }
-.user-selection{
-    position: absolute;
-    bottom: 8px;
-    left: 165px;
-}
+
 .thumbnail{
     position: relative;
 }
