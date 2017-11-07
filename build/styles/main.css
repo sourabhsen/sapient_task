@@ -1,0 +1,158 @@
+body {
+  width:100%;
+  height:100%;
+  font-family: open sans;
+  background: #ccc;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul li{
+  list-style:none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+[ng-click], [data-ng-click], [x-ng-click] {
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+
+
+a, select {
+  cursor: pointer;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.icon {
+  display: inline-block;
+}
+.fa {
+  font-size: 18px;
+   margin-bottom: 8px;
+}
+
+.bg-wh{
+  background:#fff;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+.font-italic {
+  font-style: italic;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.padding-btm{
+  padding-bottom:50px;
+}
+.padding-2{
+  padding-bottom:20px;
+  padding-top:20px;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.n-b{
+  border:none;
+}
+.border-btm{
+  border-bottom:1px solid #ccc;
+}
+.centered-container {
+  position: fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  display:table;
+  pointer-events: none;
+  z-index:9999;
+}
+.centered {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+  background-color: #fff;
+  border-radius: 0;
+  border:solid 5px #666;
+  padding:0px;
+}
+
+.ngdialog-overlay {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+.w-full{
+  width:100%;
+}
+
+.w-half{
+  width:50%;
+}
+.user-selection{
+    position: absolute;
+    bottom: 8px;
+    left: 165px;
+}
+.thumbnail{
+    position: relative;
+}
+
+.bdr-l{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 3px;
+    display: block;
+    margin: 10px 0;
+    float: left; 
+}
+
+@media (min-width:768px){
+  .pull-left-m{
+    float:left;
+  }
+  .m-auto-m{
+    margin:0;
+  }
+  .n-bordr-m{
+    border:0;
+  }
+
+.font-b{
+  font-size:30px;
+}
+
+}

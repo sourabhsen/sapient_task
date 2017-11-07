@@ -1,0 +1,21 @@
+'use strict';
+(function (window, angular, undefined) {
+  function actionControl($modal) {
+    return {
+      replace: true,
+      restrict: 'E',
+      templateUrl: 'app/modules/action-control/action-control-template.html',
+      link: function link(scope, elem, attr) {
+        scope.open = function () {
+          $modal.open({
+            templateUrl: 'app/modules/action-control/modal-template.html'
+          });
+        };
+      }
+    };
+  }
+
+  actionControl.$inject = ['ngDialog'];
+
+  angular.module('shoppingApp').directive('actionControl', actionControl);
+})(window, window.angular);
